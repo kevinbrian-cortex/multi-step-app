@@ -29,10 +29,12 @@ const Plan = () => {
       <span>
         <Image src="/assets/images/icon-arcade.svg" width="35" height="35" />
       </span>
-      <div className="flex flex-col mt-5 mr-10">
+
+      <div className="flex flex-col mt-8 mr-10">
         <strong className="text-blue-900">Arcade</strong>
         <span className="text-sm text-slate-500">$9/mo</span>
       </div>
+
     </div>
   );
 };

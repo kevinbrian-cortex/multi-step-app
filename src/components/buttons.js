@@ -22,12 +22,12 @@ export function SecondaryButton({ title, ...rest }) {
 
 export function SwitchButton() {
   return (
-    <div>
-      <strong>Monthly</strong>
-      <div>
-        <div></div>
+    <div className="border flex justify-center mt-4 p-2 rounded bg-neutral-200 items-center gap-2">
+      <strong className="font-medium text-sm">Monthly</strong>
+      <div className="border bg-blue-900 w-16 rounded-full">
+        <div className="w-5 h-5 bg-white m-1 rounded-full"></div>
       </div>
-      <strong>yearly</strong>
+      <strong className="font-medium text-sm">yearly</strong>
     </div>
   );
 }
