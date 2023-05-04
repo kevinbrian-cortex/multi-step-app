@@ -1,15 +1,17 @@
+import Image from "next/image";
 import { SwitchButton } from "../buttons";
 
 export default () => {
   return (
     <div>
-      <div>
-        <h5>Select your plan</h5>
-        <p>You have the option of monthly or yearly billing.</p>
+
+      <div className="mb-8">
+        <h5 className="text-lg font-bold text-slate-800">Select your plan</h5>
+        <p className="text-slate-500">You have the option of monthly or yearly billing.</p>
       </div>
 
-      <div>
-        {[1, 2, 3, 4].map((item) => (
+      <div className="flex gap-2">
+        {[1, 2, 3].map((item) => (
           <Plan />
         ))}
       </div>
@@ -23,13 +25,13 @@ export default () => {
 
 const Plan = () => {
   return (
-    <div>
+    <div className="flex flex-col border p-3 border-slate-300 hover:bg-slate-100 rounded hover:border-blue-400 hover:cursor">
       <span>
-        <Image src="/assets/images/icon-arcade.svg" width="100" height="100" />
+        <Image src="/assets/images/icon-arcade.svg" width="35" height="35" />
       </span>
-      <div>
-        <strong>Arcade $9/mo</strong>
-        <span>$9/mo</span>
+      <div className="flex flex-col mt-5 mr-10">
+        <strong className="text-blue-900">Arcade</strong>
+        <span className="text-sm text-slate-500">$9/mo</span>
       </div>
     </div>
   );
