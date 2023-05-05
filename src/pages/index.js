@@ -38,7 +38,11 @@ const Wrapper = () => {
   return (
     <div className="flex flex-col gap-9 pl-7 p-8">
       <Steps>{steps.map((item) => item.component)}</Steps>
-    <div className={`flex flex-row ${!isFirst ? "justify-between" : "justify-end" }`}>
+      <div
+        className={`flex flex-row ${
+          !isFirst ? "justify-between" : "justify-end"
+        }`}
+      >
         {!isFirst && <SecondaryButton title={"Go Back"} onClick={prev} />}
         <PrimaryButton title={"Next Step"} onClick={next} />
       </div>
